@@ -1,0 +1,185 @@
+@import "tailwindcss";
+
+:root {
+  --black: #0b0d10;
+  --ink: #12141a;
+  --paper: #f6f4ef;
+  --white: #ffffff;
+  --muted: #3d4250;
+  --line: #cfc9bc;
+  --accent: #1fcdff;
+  --accent-deep: #006e8a;
+  --danger: #b42318;
+}
+
+@theme inline {
+  --color-black: var(--black);
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-deep: var(--accent-deep);
+  --color-danger: var(--danger);
+  --font-display: var(--font-display);
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  overflow-x: clip;
+}
+
+.defer-paint {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 28rem;
+}
+
+h1,
+h2,
+h3,
+.display {
+  font-family: var(--font-display), var(--font-sans);
+  letter-spacing: -0.03em;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+a,
+button,
+.btn,
+summary {
+  touch-action: manipulation;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -40rem;
+  z-index: 80;
+  background: var(--accent);
+  color: var(--black);
+  padding: 0.5rem 0.75rem;
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.diag {
+  position: relative;
+}
+
+.diag::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 4.5rem;
+  background: var(--paper);
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  pointer-events: none;
+}
+
+.diag-dark::after {
+  background: var(--black);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .diag::after {
+    display: none;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.7rem 1.15rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--black);
+}
+
+.btn-primary:hover {
+  background: #6de0ff;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--white);
+  border-color: rgb(255 255 255 / 0.45);
+}
+
+.btn-ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn-dark {
+  background: var(--black);
+  color: var(--white);
+}
+
+.btn-dark:hover {
+  background: #23262e;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  min-height: 2.75rem;
+  border: 1px solid var(--line);
+  background: var(--white);
+  padding: 0.6rem 0.75rem;
+  color: var(--ink);
+}
+
+.field textarea {
+  min-height: 8rem;
+}
+
+.field .error {
+  color: var(--danger);
+  font-size: 0.875rem;
+}
+
+.honeypot {
+  position: absolute;
+  left: -100vw;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
