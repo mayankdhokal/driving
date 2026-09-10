@@ -132,7 +132,7 @@ export const ui = {
   formTitle: { en: "Want a seat? Write to us.", pl: "Chcesz miejsce? Napisz." },
   footerBlurb: {
     en: "Driving school in Kęty, a short hop from Oświęcim. Same Hyundais the exam centre puts on the test.",
-    pl: "Ośrodek szkolenia kierowców w Kętach, blisko Oświęcimia. Te same Hyundaie co na WORD.",
+    pl: " ",
   },
   courseDetails: { en: "Course details", pl: "Szczegóły kursu" },
   englishTheory: { en: "English theory", pl: "Teoria po angielsku" },
