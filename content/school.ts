@@ -2,7 +2,7 @@ import type { School } from "./types";
 
 export const school = {
   name: "DriveWay Szkoła jazdy",
-  legalName: 'Andrzej Ostafin Ośrodek Szkolenia Kierowców F.H.-U. "MADO"',
+  legalName: 'Kowalski Ostafin Ośrodek Szkolenia Kierowców F.H.-U. "DriveWay"',
   nip: "5491113873",
   regon: "851766105",
   founded: 2003,
