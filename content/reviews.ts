@@ -25,7 +25,7 @@ export const reviews = {
       postedAt: "2026-08-22",
       quote: {
         en: "I failed Category A elsewhere, did one extra hour here, and passed the second time. The instructor spotted what I was doing wrong and told me how to fix it.",
-        pl: "Kurs na kat. A robiłam w innym ośrodku, niestety nie zdałam za pierwszym razem. Jedna godzina doszkalająca w MADO i zdałam za drugim razem.",
+        pl: "Kurs na kat. A robiłam w innym ośrodku, niestety nie zdałam za pierwszym razem. Jedna godzina doszkalająca w DriveWay i zdałam za drugim razem.",
       },
     },
     {
@@ -36,7 +36,7 @@ export const reviews = {
       postedAt: "2026-08-09",
       quote: {
         en: "Calm lectures, decent kit, they treat you as a person. I would send anyone here.",
-        pl: "Wykładowca super, instruktorzy również, fajna atmosfera, indywidualne podejście do kursantów, sprzęt ok. Z chęcią polecę każdemu ten ośrodek.",
+        pl: "Wykładowca super, instruktorzy również, fajna atmosfera, indywidualne podejście do kursantów, Z chęcią polecę każdemu ten ośrodek.",
       },
     },
     {
