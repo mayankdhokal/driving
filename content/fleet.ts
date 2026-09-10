@@ -12,7 +12,7 @@ export const fleet: readonly FleetItem[] = [
     kind: "car",
     caption: {
       en: "Exam-spec Hyundai, dual control",
-      pl: "Hyundai jak na WORD, podwójne pedały",
+      pl: "Hyundai jak na egzaminie w WORD",
     },
   },
   {
