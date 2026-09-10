@@ -105,7 +105,7 @@ export const ui = {
   },
   otherCats: {
     en: "Other categories we run: AM, A1, A2, A. Theory for these categories is in Polish.",
-    pl: "Prowadzimy też AM, A1, A2, A. Teoria tych kategorii jest po polsku.",
+    pl: " ",
   },
   mapTitle: { en: "Map of DriveWay driving school in Kęty", pl: "Mapa DriveWay Szkoła jazdy w Kętach" },
   openMaps: { en: "Open in Google Maps", pl: "Otwórz w Google Maps" },
