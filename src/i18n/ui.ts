@@ -74,7 +74,7 @@ export const ui = {
   why3t: { en: "Honest extras", pl: "Dopłaty bez ściemy" },
   moneyEyebrow: { en: "Category B", pl: "Kategoria B" },
   fullDetails: { en: "Full Category B details", pl: "Szczegóły kategorii B" },
-  pricesTitle: { en: "Prices, written down", pl: "Cennik, na piśmie" },
+  pricesTitle: { en: "Prices, written down", pl: "Cennik" },
   pricesLead: {
     en: "Course fee covers hours and internal exams. Medical, extra lessons, and the state exam are listed separately on purpose.",
     pl: "Cena kursu to godziny i egzaminy wewnętrzne. Badania, jazdy dodatkowe i WORD są osobno, specjalnie.",
