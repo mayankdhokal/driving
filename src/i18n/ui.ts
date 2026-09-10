@@ -109,7 +109,7 @@ export const ui = {
   },
   mapTitle: { en: "Map of DriveWay driving school in Kęty", pl: "Mapa DriveWay Szkoła jazdy w Kętach" },
   openMaps: { en: "Open in Google Maps", pl: "Otwórz w Google Maps" },
-  fleetTitle: { en: "The cars and the yard", pl: "Nasza flota" },
+  fleetTitle: { en: "The cars and the yard", pl: "Galeria" },
   fleetHomeLead: {
     en: "Same family of cars the exam centre uses. See the lot.",
     pl: "Auta z tej samej rodziny co na WORD. Zobacz plac.",
@@ -204,7 +204,7 @@ export const pages = {
     en: "MADO instructors in Kęty. See who teaches in English before you enrol.",
     pl: "Instruktorzy MADO w Kętach. Sprawdź, kto uczy po angielsku, zanim się zapiszesz.",
   },
-  fleetPageTitle: { en: "Fleet", pl: "Pojazdy" },
+  fleetPageTitle: { en: "Fleet", pl: "Więcej" },
   fleetH1: { en: "Same family of cars the exam centre uses.", pl: "Auta z tej samej rodziny co na WORD." },
   fleetLead: {
     en: "You do not want to meet the clutch of an exam car for the first time at the Oświęcim exam centre. You will not.",
