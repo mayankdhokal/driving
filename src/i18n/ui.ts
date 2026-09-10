@@ -21,7 +21,7 @@ export const ui = {
   visit: { en: "Visit", pl: "Adres" },
   call: { en: "Call", pl: "Telefon" },
   office: { en: "Office", pl: "Biuro" },
-  mobile: { en: "Mobile", pl: "Komórka" },
+  mobile: { en: "Mobile", pl: "Kierownik" },
   cookieBody: {
     en: "We use optional analytics to see which pages are used. No ads. The enrolment form works either way.",
     pl: "Opcjonalna analityka pokazuje, które strony są czytane. Bez reklam. Formularz zapisu działa i tak.",
