@@ -109,7 +109,7 @@ export const ui = {
   },
   mapTitle: { en: "Map of DriveWay driving school in Kęty", pl: "Mapa DriveWay Szkoła jazdy w Kętach" },
   openMaps: { en: "Open in Google Maps", pl: "Otwórz w Google Maps" },
-  fleetTitle: { en: "The cars and the yard", pl: "Auta i plac" },
+  fleetTitle: { en: "The cars and the yard", pl: "Nasza flota" },
   fleetHomeLead: {
     en: "Same family of cars the exam centre uses. See the lot.",
     pl: "Auta z tej samej rodziny co na WORD. Zobacz plac.",
