@@ -7,12 +7,9 @@ const sharedIncludes: L[] = [
   },
   {
     en: "Internal theory exam in the state-exam format",
-    pl: "Egzamin wewnętrzny teoretyczny w formule WORD",
+    pl: "10 godzin jazd praktycznych z instruktorem",
   },
   {
-    en: "Internal practical exam",
-    pl: "Egzamin wewnętrzny praktyczny",
-  },
 ];
 
 const sharedExcludes: L[] = [
@@ -22,7 +19,7 @@ const sharedExcludes: L[] = [
   },
   {
     en: "Medical certificate (available here, billed separately)",
-    pl: "Badania lekarskie (na miejscu, płatne osobno)",
+    pl: "Badania lekarskie",
   },
   {
     en: "Licence card issued by the office after you pass",
@@ -37,14 +34,14 @@ export const courses: readonly Course[] = [
     name: { en: "Category AM: Moped", pl: "Kategoria AM: motorower" },
     summary: {
       en: "Mopeds and light quadricycles. Theory is in Polish. Ask the office if you need extra support on the yard.",
-      pl: "Motorowery i lekkie czterokołowce. Teoria po polsku. Biuro podpowie, jak wygląda plac.",
+      pl: "Motorowery i lekkie czterokołowce.",
     },
     minAge: {
       en: "14 years (start at 13 years 9 months)",
       pl: "14 lat (start od 13 lat i 9 miesięcy)",
     },
-    theoryHours: 25,
-    practicalHours: 5,
+    theoryHours:,
+    practicalHours: 10,
     priceGross: 1000,
     includes: [...sharedIncludes],
     excludes: [...sharedExcludes],
