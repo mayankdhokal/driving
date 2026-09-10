@@ -101,7 +101,7 @@ export const ui = {
   contactTitle: { en: "Come in. Or just call.", pl: "Wpadnij. Albo zadzwoń." },
   contactLead: {
     en: "A short drive from Oświęcim.",
-    pl: "Kilka minut od Oświęcimia.",
+    pl: "Poniedziałek-Czwartek: 8:00-16:00, Piątek 8:00-14:00",
   },
   otherCats: {
     en: "Other categories we run: AM, A1, A2, A. Theory for these categories is in Polish.",
