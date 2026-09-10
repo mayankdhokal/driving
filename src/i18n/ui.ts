@@ -129,7 +129,7 @@ export const ui = {
   nextReviews: { en: "Next reviews", pl: "Następne opinie" },
   prevReviews: { en: "Previous reviews", pl: "Poprzednie opinie" },
   starRating: { en: "star rating", pl: "ocena w gwiazdkach" },
-  formTitle: { en: "Want a seat? Write to us.", pl: "Chcesz miejsce? Napisz." },
+  formTitle: { en: "Want a seat? Write to us.", pl: "Zapisz się na kurs" },
   footerBlurb: {
     en: "Driving school in Kęty, a short hop from Oświęcim. Same Hyundais the exam centre puts on the test.",
     pl: " ",
