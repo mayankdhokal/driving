@@ -98,7 +98,7 @@ export const ui = {
   walkthrough: { en: "Full walkthrough", pl: "Cały przebieg" },
   faqTitle: { en: "Questions people actually ask", pl: "Pytania, które padają naprawdę" },
   moreQuestions: { en: "More questions", pl: "Więcej pytań" },
-  contactTitle: { en: "Come in. Or just call.", pl: "Wpadnij. Albo zadzwoń." },
+  contactTitle: { en: "Come in. Or just call.", pl: "Masz pytanie? Skontaktuj się z nami" },
   contactLead: {
     en: "A short drive from Oświęcim.",
     pl: "Poniedziałek-Czwartek: 8:00-16:00, Piątek 8:00-14:00",
