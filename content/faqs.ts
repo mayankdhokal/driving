@@ -4,55 +4,55 @@ export const faqs: readonly FaqItem[] = [
   {
     q: {
       en: "Can I do Category B with theory in English?",
-      pl: "Czy teorię kat. B można robić po angielsku?",
+      pl: "Czy instruktor odbiera kursanta spod domu/szkoły?",
     },
     a: {
       en: "Yes. Lectures, classroom tests, and office paperwork can be in English. Practical lessons are taught in English in a dual-control Hyundai. The state theory exam is available in English. The practical state exam is in Polish. We drill the examiner commands so you are not guessing on the day.",
-      pl: "Tak. Wykłady, testy na sali i biuro mogą być po angielsku. Jazdy też prowadzimy po angielsku na Hyundaiu z podwójnymi pedałami. Egzamin teoretyczny WORD jest po angielsku. Egzamin praktyczny jest po polsku. Ćwiczymy komendy egzaminatora.",
+      pl: "Tak! Nie musisz dojeżdżać do nas. Możemy rozpocząć jazdę spod Twojego domu, szkoły lub innego ustalonego miejsca.",
     },
     category: "language",
   },
   {
     q: {
       en: "I live near Oświęcim. Do I need Polish for the course?",
-      pl: "Mieszkam koło Oświęcimia. Czy na kurs trzeba znać polski?",
+      pl: "Jak zapisać się na kurs?",
     },
     a: {
       en: "Not for Category B if you join an English group. You will need a passport or residence card for the candidate-driver profile, and you will hear Polish on the road. We are in Kęty, a short drive from Oświęcim.",
-      pl: "Na kat. B w grupie angielskiej nie. Do PKK potrzebny jest paszport albo karta pobytu. Na drodze i tak usłyszysz polski. Jesteśmy w Kętach, blisko Oświęcimia.",
+      pl: "To proste! Skontaktuj się z nami telefonicznie, przez formularz kontaktowy lub wiadomość. Ustalimy dogodny termin rozpoczęcia kursu i pomożemy Ci przejść przez wszystkie formalności.",
     },
     category: "foreigner",
   },
   {
     q: {
       en: "What is a PKK, and can you get it for me?",
-      pl: "Co to jest PKK i czy załatwicie to za mnie?",
+      pl: "Czy można zacząć jazdy praktyczne przed zdaniem teorii?",
     },
     a: {
       en: "PKK is the Polish name for your candidate-driver profile. The municipal office issues it after a medical. We cannot apply in your name, but we walk you through the form, the address, and the documents. Without a PKK the school is not allowed to log your hours.",
-      pl: "PKK to Profil Kandydata na Kierowcę, wydawany przez urząd po badaniach. Nie złożymy wniosku za Ciebie, ale powiemy, który formularz i który pokój. Bez PKK nie wolno nam wpisywać godzin.",
+      pl: "Nie. Najpierw należy zdać egzamin teoretyczny, a dopiero później rozpocząć część praktyczną kursu.",
     },
     category: "admin",
   },
   {
     q: {
       en: "What does 3,600 zł actually include?",
-      pl: "Co wchodzi w 3600 zł?",
+      pl: "Jak wygląda teoria?",
     },
     a: {
       en: "Thirty hours of theory, thirty hours of practical, internal exams, and help with the candidate-driver application. It does not include the medical (200 zł here), state exam fees (paid to the exam centre), or extra lessons beyond the syllabus.",
-      pl: "30 godzin teorii, 30 godzin praktyki, egzaminy wewnętrzne i pomoc przy PKK. Nie obejmuje badań (200 zł u nas), opłat WORD (płacisz państwu) ani jazd dodatkowych poza programem.",
+      pl: "Otrzymujesz od nas materiały do nauki online, dzięki którym możesz przygotować się do egzaminu teoretycznego we własnym tempie. Gdy będziesz gotowy, pomagamy Ci z zapisem na egzamin teoretyczny w WORD.",
     },
     category: "price",
   },
   {
     q: {
       en: "Can I start before I turn 18?",
-      pl: "Czy mogę zacząć przed 18. urodzinami?",
+      pl: "Czy można płacić w ratach?",
     },
     a: {
       en: "Yes, at 17 years and 9 months for Category B. You cannot sit the practical state exam until you are 18. We time the hours so you are not sitting in a holding pattern.",
-      pl: "Tak, od 17 lat i 9 miesięcy na kat. B. Egzamin praktyczny WORD dopiero po 18. latach. Układamy godziny tak, żeby nie czekać w próżni.",
+      pl: "Tak! Koszt kursu możesz rozłożyć na 3 raty, dzięki czemu nie musisz płacić całej kwoty jednorazowo.",
     },
     category: "age",
   },
@@ -63,18 +63,18 @@ export const faqs: readonly FaqItem[] = [
     },
     a: {
       en: "WORD is the Polish name for the state exam centre. After the course you sit theory and practical tests there, usually in Oświęcim. Theory can be in English. The practical test is in Polish; we drill the examiner commands. Fees are paid to the centre, not to us.",
-      pl: "WORD to wojewódzki ośrodek, w którym zdajesz egzamin państwowy. Po kursie teoria i praktyka, zwykle w Oświęcimiu. Teoria może być po angielsku. Praktyka jest po polsku; ćwiczymy komendy. Opłaty płacisz do WORD, nie nam.",
+      pl: "WORD, czyli Wojewódzki Ośrodek Ruchu Drogowego, to miejsce, w którym odbywają się państwowe egzaminy na prawo jazdy, zarówno teoretyczne, jak i praktyczne.",
     },
     category: "admin",
   },
   {
     q: {
       en: "Do you take instalments?",
-      pl: "Czy można płacić w ratach?",
+      pl: "Czy egzamin będę zdawał tym samym autem, którym uczyłem się jeździć?",
     },
     a: {
       en: "Talk to the office. Many students pay a deposit to hold a seat and the rest before practical hours start. We do not add interest. Bring ID when you sign the contract.",
-      pl: "Ustal to w biurze. Często zadatek na miejsce, reszta przed jazdami. Bez odsetek. Na umowę weź dokument tożsamości.",
+      pl: "Tak! Egzamin praktyczny zdajesz tym samym modelem samochodu, którym odbywałeś jazdy w naszej szkole. Dzięki temu w dniu egzaminu nie musisz przyzwyczajać się do nowego auta.",
     },
     category: "price",
   },

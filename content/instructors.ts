@@ -7,8 +7,8 @@ const lecturer: Instructor["role"] = {
 
 export const instructors: readonly Instructor[] = [
   {
-    id: "andrzej-ostafin",
-    name: "Andrzej Ostafin",
+    id: "andrzej-kowalski",
+    name: "Andrzej Kowalski",
     role: {
       en: "Owner, lecturer, instructor",
       pl: "Właściciel, wykładowca, instruktor",
@@ -23,16 +23,16 @@ export const instructors: readonly Instructor[] = [
     },
   },
   {
-    id: "stanislaw-gawlik",
-    name: "Stanisław Gawlik",
+    id: "stanislaw-Nowak",
+    name: "Stanisław Nowak",
     role: lecturer,
     categories: ["B"],
     languages: ["pl"],
     photo: "/images/instructors/stanislaw-gawlik.webp",
   },
   {
-    id: "jozef-kala",
-    name: "Józef Kała",
+    id: "jozef-woźniak",
+    name: "Józef Woźniak",
     role: lecturer,
     categories: ["B"],
     languages: ["pl"],

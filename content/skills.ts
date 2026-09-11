@@ -30,7 +30,7 @@ export const skills: readonly Skill[] = [
     title: { en: "The town", pl: "Egzamin praktyczny" },
     body: {
       en: "Independent driving in Kęty and on the road to Oświęcim. Exam nerves included, not skipped.",
-      pl: "Z nami będziesz na niego dobrze przygotowany!",
+      pl: "Przygotujemy cię krok po kroku.",
     },
   },
 ];
