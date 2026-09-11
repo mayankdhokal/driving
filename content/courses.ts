@@ -9,7 +9,6 @@ const sharedIncludes: L[] = [
     en: "Internal theory exam in the state-exam format",
     pl: "10 godzin jazd praktycznych z instruktorem",
   },
-  {
 ];
 
 const sharedExcludes: L[] = [
@@ -40,7 +39,7 @@ export const courses: readonly Course[] = [
       en: "14 years (start at 13 years 9 months)",
       pl: "14 lat (start od 13 lat i 9 miesięcy)",
     },
-    theoryHours:,
+    theoryHours: 25,
     practicalHours: 10,
     priceGross: 1000,
     includes: [...sharedIncludes],
