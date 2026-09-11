@@ -155,7 +155,6 @@ export default async function HomePage({ params }: HomeProps) {
 
       <section className="defer-paint mx-auto max-w-6xl px-4 py-16 md:py-20">
         <h2 className="display text-3xl font-bold sm:text-4xl">{pick(pages.coursesTitle, locale)}</h2>
-        <p className="mt-3 max-w-2xl text-muted">{pick(pages.coursesLead, locale)}</p>
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {courses.map((course) => (
             <CourseCard key={course.slug} course={course} locale={locale} />
@@ -187,7 +186,6 @@ export default async function HomePage({ params }: HomeProps) {
       {showPublicPrices ? (
         <section className="defer-paint mx-auto max-w-6xl px-4 py-16 md:py-20">
           <h2 className="display text-3xl font-bold sm:text-4xl">{t("pricesTitle")}</h2>
-          <p className="mt-3 max-w-2xl text-muted">{t("pricesLead")}</p>
           <div className="mt-10">
             <PriceTable locale={locale} />
           </div>
@@ -208,6 +206,7 @@ export default async function HomePage({ params }: HomeProps) {
 
       <section className="defer-paint mx-auto max-w-6xl px-4 py-16 md:py-20">
         <h2 className="display text-3xl font-bold sm:text-4xl">{t("formTitle")}</h2>
+        <p className="mt-3 max-w-2xl text-muted">{t("formLead")}</p>
         <div className="mt-10">
           <EnrolForm locale={locale} />
         </div>

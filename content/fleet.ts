@@ -57,4 +57,18 @@ export const fleet: readonly FleetItem[] = [
       pl: "Sala do teorii",
     },
   },
+  {
+    src: "/images/fleet-cars.webp",
+    width: 800,
+    height: 450,
+    alt: {
+      en: "Driving-school cars parked on the lot",
+      pl: "Samochody szkoły jazdy zaparkowane na placu",
+    },
+    kind: "car",
+    caption: {
+      en: "Our cars on the lot",
+      pl: "Nasze auta na placu",
+    },
+  },
 ];

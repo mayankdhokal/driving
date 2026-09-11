@@ -26,9 +26,6 @@ export function PriceTable({ locale }: { locale: Locale }) {
               {pick(ui.hoursPractical, locale)}
             </p>
             <p className="mt-2 display text-2xl font-bold">{formatPln(course.priceGross)}</p>
-            <p className="mt-1 text-sm text-muted">
-              {course.englishAvailable ? pick(ui.yes, locale) : pick(ui.polishTheory, locale)}
-            </p>
           </article>
         ))}
       </div>
@@ -39,8 +36,7 @@ export function PriceTable({ locale }: { locale: Locale }) {
             <tr className="border-b border-line text-sm uppercase tracking-wide text-muted">
               <th className="py-3 pr-4 font-medium">{pick(ui.tableCategory, locale)}</th>
               <th className="py-3 pr-4 font-medium">{pick(ui.tableHours, locale)}</th>
-              <th className="py-3 pr-4 font-medium">{pick(ui.tablePrice, locale)}</th>
-              <th className="py-3 font-medium">{pick(ui.tableLang, locale)}</th>
+              <th className="py-3 font-medium">{pick(ui.tablePrice, locale)}</th>
             </tr>
           </thead>
           <tbody>
@@ -55,10 +51,7 @@ export function PriceTable({ locale }: { locale: Locale }) {
                   {course.theoryHours}h {pick(ui.hoursTheory, locale)} · {course.practicalHours}h{" "}
                   {pick(ui.hoursPractical, locale)}
                 </td>
-                <td className="py-4 pr-4 font-bold">{formatPln(course.priceGross)}</td>
-                <td className="py-4">
-                  {course.englishAvailable ? pick(ui.yes, locale) : pick(ui.polishTheory, locale)}
-                </td>
+                <td className="py-4 font-bold">{formatPln(course.priceGross)}</td>
               </tr>
             ))}
           </tbody>
