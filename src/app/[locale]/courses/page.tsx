@@ -24,7 +24,6 @@ export default async function CoursesPage({ params }: Props) {
     <PageShell
       eyebrow={pick(pages.coursesTitle, locale)}
       title={pick(pages.coursesH1, locale)}
-      lead={pick(pages.coursesLead, locale)}
     >
       <div className="grid gap-6 md:grid-cols-2">
         {courses.map((course) => (
