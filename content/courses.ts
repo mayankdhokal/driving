@@ -48,7 +48,7 @@ export const courses: readonly Course[] = [
     priceGross: 1000,
     includes: [...sharedIncludes],
     excludes: [...sharedExcludes],
-    vehicles: [{ en: "School mopeds on an exam-spec yard", pl: "Motorowery szkolne, plac jak na WORD" }],
+    vehicles: [{ en: "School mopeds on an exam-spec yard", pl: "Motorowery ROMET" }],
     englishAvailable: false,
   },
   {
@@ -68,7 +68,7 @@ export const courses: readonly Course[] = [
     priceGross: 2800,
     includes: [...sharedIncludes],
     excludes: [...sharedExcludes],
-    vehicles: [{ en: "Light motorcycles, exam-spec yard", pl: "Motocykle lekkie, plac jak na WORD" }],
+    vehicles: [{ en: "Light motorcycles, exam-spec yard", pl: "Kawasaki Z125 2024" }],
     englishAvailable: false,
   },
   {
@@ -88,7 +88,7 @@ export const courses: readonly Course[] = [
     priceGross: 3000,
     includes: [...sharedIncludes],
     excludes: [...sharedExcludes],
-    vehicles: [{ en: "A2 motorcycles, exam-spec yard", pl: "Motocykle A2, plac jak na WORD" }],
+    vehicles: [{ en: "A2 motorcycles, exam-spec yard", pl: "Yamaha MT-03" }],
     englishAvailable: false,
   },
   {
@@ -108,7 +108,7 @@ export const courses: readonly Course[] = [
     priceGross: 3000,
     includes: [...sharedIncludes],
     excludes: [...sharedExcludes],
-    vehicles: [{ en: "Category A motorcycles, exam-spec yard", pl: "Motocykle kat. A, plac jak na WORD" }],
+    vehicles: [{ en: "Category A motorcycles, exam-spec yard", pl: "KTM Duke 390" }],
     englishAvailable: false,
   },
   {
@@ -135,7 +135,7 @@ export const courses: readonly Course[] = [
       },
     ],
     excludes: [...sharedExcludes],
-    vehicles: [{ en: "Hyundai dual-control cars (exam-spec)", pl: "Hyundai z podwójnymi pedałami (jak na WORD)" }],
+    vehicles: [{ en: "Hyundai dual-control cars (exam-spec)", pl: "Hyundai i20" }],
     englishAvailable: true,
     popular: true,
   },
