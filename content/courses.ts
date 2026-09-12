@@ -57,7 +57,7 @@ export const courses: readonly Course[] = [
     name: { en: "Category A1: Light motorcycle", pl: "Kategoria A1: motocykl lekki" },
     summary: {
       en: "Motorcycles up to 125 cc. Practical training on machines close to what the exam centre uses in Małopolska.",
-      pl: "Motocykle do 125 cm³. Szkolenie na sprzęcie zbliżonym do WORD w Małopolsce.",
+      pl: "Motocykle o pojemności skokowej silnika do 125 cm³, mocy do 11 kW oraz stosunku mocy do masy własnej do 0,1 kW/kg",
     },
     minAge: {
       en: "16 years (start at 15 years 9 months)",
@@ -77,7 +77,7 @@ export const courses: readonly Course[] = [
     name: { en: "Category A2: Motorcycle", pl: "Kategoria A2: motocykl" },
     summary: {
       en: "Restricted motorcycles. Same classroom and yard as Category A, with hours matched to the Polish syllabus.",
-      pl: "Motocykle z ograniczeniem mocy. Ta sama sala i plac co kat. A, godziny zgodne z programem.",
+      pl: "Motocykl o mocy do 35 kW i stosunku mocy do masy własnej do 0,2 kW/kg",
     },
     minAge: {
       en: "18 years (start at 17 years 9 months)",
@@ -97,7 +97,7 @@ export const courses: readonly Course[] = [
     name: { en: "Category A: Motorcycle", pl: "Kategoria A: motocykl" },
     summary: {
       en: "Unrestricted motorcycles. Combine with A2 if you are building up through the staged motorcycle path.",
-      pl: "Motocykle bez ograniczeń. Można łączyć z A2, jeśli idziesz ścieżką stopniową.",
+      pl: "Motocykle bez ograniczeń.",
     },
     minAge: {
       en: "24 years, or 20 with two years on A2",
@@ -117,7 +117,7 @@ export const courses: readonly Course[] = [
     name: { en: "Category B: Car", pl: "Kategoria B: samochód" },
     summary: {
       en: "The car licence. Thirty hours of theory (also in English), thirty hours in a dual-control Hyundai of the kind the exam centre uses.",
-      pl: "Prawo jazdy na samochód. 30 godzin teorii (także po angielsku) i 30 godzin na Hyundaiu z podwójnymi pedałami, jak na WORD.",
+      pl: "pojazdy samochodowe o dopuszczalnej masie całkowitej (DMC) do 3,5 tony oraz inne wybrane pojazdy",
     },
     minAge: {
       en: "18 years (start at 17 years 9 months)",
