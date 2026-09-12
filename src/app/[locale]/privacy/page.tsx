@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { legal } from "content/legal";
-import { school } from "content/school";
+import { privacyPolicy, type PrivacyListItem } from "content/privacy-policy";
 import { PageShell } from "@/components/page-shell";
-import { isLocale, pick } from "@/lib/locale";
+import { isLocale, pick, type Locale } from "@/lib/locale";
 import { pageMeta } from "@/lib/page-meta";
 import { pages } from "@/i18n/ui";
 
@@ -15,35 +14,47 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return pageMeta(locale, "/privacy", "privacyTitle", "privacyLead");
 }
 
+function PolicyList({ items, locale }: { items: readonly PrivacyListItem[]; locale: Locale }) {
+  return (
+    <ul className="list-disc space-y-2 pl-5">
+      {items.map((item) => {
+        const label = pick(item.text, locale);
+        return (
+          <li key={`${item.href ?? ""}${label}`}>
+            {item.href ? (
+              <a href={item.href} className="underline hover:text-ink" rel="noreferrer" target="_blank">
+                {label}
+              </a>
+            ) : (
+              label
+            )}
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
 export default async function PrivacyPage({ params }: Props) {
   const { locale: raw } = await params;
   if (!isLocale(raw)) notFound();
   const locale = raw;
 
   return (
-    <PageShell
-      eyebrow={pick(pages.privacyTitle, locale)}
-      title={pick(pages.privacyH1, locale)}
-      lead={pick(pages.privacyLead, locale)}
-    >
-      <div className="max-w-3xl space-y-6 text-muted">
-        <h2 className="display text-2xl font-bold text-ink">{pick(legal.privacyWho, locale)}</h2>
-        <p>
-          {school.legalName}, NIP {school.nip}, REGON {school.regon}. {school.address.street},{" "}
-          {school.address.postcode} {school.address.city}. {school.registeredAddress.street},{" "}
-          {school.registeredAddress.postcode} {school.registeredAddress.city}. {school.email}.{" "}
-          {school.phone.office}.
-        </p>
-        <h2 className="display text-2xl font-bold text-ink">{pick(legal.privacyForm, locale)}</h2>
-        <p>{pick(legal.privacyForm1, locale)}</p>
-        <p>{pick(legal.privacyForm2, locale)}</p>
-        <p>{pick(legal.privacyForm3, locale)}</p>
-        <p>{pick(legal.privacyForm4, locale)}</p>
-        <h2 className="display text-2xl font-bold text-ink">{pick(legal.privacyCookies, locale)}</h2>
-        <p>{pick(legal.privacyCookies1, locale)}</p>
-        <p>{pick(legal.privacyCookies2, locale)}</p>
-        <h2 className="display text-2xl font-bold text-ink">{pick(legal.privacyRights, locale)}</h2>
-        <p>{pick(legal.privacyRightsBody, locale)}</p>
+    <PageShell eyebrow={pick(pages.privacyTitle, locale)} title={pick(pages.privacyH1, locale)}>
+      <div className="max-w-3xl space-y-10 text-muted">
+        {privacyPolicy.map((section) => (
+          <section key={section.title.pl} className="space-y-3">
+            <h2 className="display text-2xl font-bold text-ink">{pick(section.title, locale)}</h2>
+            {section.blocks.map((block, index) =>
+              block.type === "ul" ? (
+                <PolicyList key={`${section.title.pl}-ul-${index}`} items={block.items} locale={locale} />
+              ) : (
+                <p key={`${section.title.pl}-p-${index}`}>{pick(block.text, locale)}</p>
+              ),
+            )}
+          </section>
+        ))}
       </div>
     </PageShell>
   );

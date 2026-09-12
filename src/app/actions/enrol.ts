@@ -6,7 +6,6 @@ import path from "node:path";
 import { Resend } from "resend";
 import { school } from "content/school";
 import { courseByCode } from "content/courses";
-import { intakes } from "content/intakes";
 import {
   enrolValues,
   localeFromForm,
@@ -14,9 +13,9 @@ import {
   type EnrolState,
 } from "@/lib/enrol-schema";
 import { clientIp, rateLimit } from "@/lib/rate-limit";
-import { formatIntakeWhen, formatPln } from "@/lib/format";
+import { formatPln } from "@/lib/format";
 import { pick } from "@/lib/locale";
-import { formCopy, ui } from "@/i18n/ui";
+import { formCopy } from "@/i18n/ui";
 
 export async function submitEnrol(
   _prev: EnrolState,
@@ -48,20 +47,13 @@ export async function submitEnrol(
   }
 
   const course = courseByCode(values.category);
-  const intake = intakes.find((item) => item.id === values.intakeId);
-  const intakeLabel = intake
-    ? formatIntakeWhen(intake.startsAt, locale)
-    : pick(formCopy.firstSeat, locale);
   const courseName = course ? pick(course.name, locale) : values.category;
-  const langLabel = values.language === "en" ? pick(ui.english, locale) : pick(ui.polish, locale);
 
   const body = [
     `Name: ${values.name}`,
     `Phone: ${values.phone}`,
     `Email: ${values.email}`,
     `Category: ${courseName}${course ? ` (${formatPln(course.priceGross)})` : ""}`,
-    `Language: ${langLabel}`,
-    `Preferred intake: ${intakeLabel}`,
     `UI locale: ${locale}`,
     "",
     values.message || "(no message)",
@@ -101,7 +93,7 @@ export async function submitEnrol(
       text: [
         `${values.name},`,
         "",
-        `${courseName} (${langLabel}). ${intakeLabel}.`,
+        `${courseName}.`,
         "",
         school.phone.office,
         school.phone.mobile,

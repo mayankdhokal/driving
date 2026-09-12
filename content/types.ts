@@ -150,5 +150,4 @@ export interface FleetItem {
   height: number;
   alt: L;
   kind: "car" | "motorcycle" | "yard" | "classroom";
-  caption: L;
 }

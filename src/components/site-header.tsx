@@ -79,7 +79,7 @@ export function SiteHeader({ locale }: { locale: Locale }) {
           </LocaleLink>
           <button
             type="button"
-            className="inline-flex min-h-11 min-w-11 items-center justify-center border-2 border-white/45 text-sm font-bold hover:border-accent hover:text-accent"
+            className="btn btn-ghost px-3 text-sm"
             aria-expanded={open}
             aria-controls="mobile-nav"
             onClick={() => setOpen((value) => !value)}
