@@ -2,26 +2,26 @@ import type { School } from "./types";
 
 export const school = {
   name: "DriveWay Szkoła jazdy",
-  legalName: 'Kowalski Ostafin Ośrodek Szkolenia Kierowców F.H.-U. "DriveWay"',
-  nip: "5491113873",
+  legalName: 'Kowalski Andrzej Ośrodek Szkolenia Kierowców F.H.-U. "DriveWay"',
+  nip: "5743907432",
   regon: "851766105",
   founded: 2003,
   phone: {
-    office: "+48 33 845 08 38",
-    mobile: "+48 516 154 888",
-    whatsapp: "+48 516 154 888",
+    office: "+48 67 432 08 21",
+    mobile: "+48 432 654 423",
+    whatsapp: "+48 897 531 785",
   },
   extraPhones: [
-    { label: { en: "Manager", pl: "Kierownik" }, number: "+48 603 931 507" },
-    { label: { en: "Tomasz", pl: "Tomasz" }, number: "+48 739 293 314" },
+    { label: { en: "Manager", pl: "Kierownik" }, number: "+48 643 234 645" },
+    { label: { en: "Tomasz", pl: "Tomasz" }, number: "+48 329 976 585" },
   ],
-  email: "ostafin@onet.eu",
+  email: "AndrzejKowalski@onet.eu",
   bank: {
     name: "ING",
-    iban: "PL66 1050 1113 1000 0090 7368 3360",
+    iban: "PL66 1093 1211 1000 5234 7368 2431",
   },
   address: {
-    street: "ul. Świętokrzyska 22",
+    street: "ul. Kopernika 21",
     postcode: "32-650",
     city: "Kęty",
     region: {
