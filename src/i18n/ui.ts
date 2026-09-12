@@ -195,10 +195,10 @@ export const pages = {
   },
   step: { en: "Step", pl: "Krok" },
   instructorsTitle: { en: "Instructors", pl: "Instruktorzy" },
-  instructorsH1: { en: "Faces, categories, and languages.", pl: "Twarze, kategorie i języki." },
+  instructorsH1: { en: "Faces, categories, and languages.", pl: "Nasi instruktorzy" },
   instructorsLead: {
     en: "If English is listed, they will teach you in English. If it is not, they still know the yard. Book them only if you can follow Polish.",
-    pl: "Gdy jest angielski, uczą po angielsku. Gdy go nie ma, znają plac. Bierz ich, jeśli ogarniasz polski.",
+    pl: " ",
   },
   instructorsDesc: {
     en: "MADO instructors in Kęty. See who teaches in English before you enrol.",
