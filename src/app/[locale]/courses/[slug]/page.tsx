@@ -36,7 +36,6 @@ export default async function CoursePage({ params }: Props) {
 
   return (
     <PageShell
-      eyebrow={pick(course.englishAvailable ? pages.englishAvailable : ui.polishTheory, locale)}
       title={pick(course.name, locale)}
       lead={pick(course.summary, locale)}
     >
