@@ -21,7 +21,6 @@ export function InstructorCard({
   sizes,
 }: InstructorCardProps) {
   const dark = tone === "dark";
-  const badge = languageBadge(person, locale);
 
   return (
     <article className={dark ? "border border-white/15" : "border border-line bg-white"}>
@@ -41,13 +40,6 @@ export function InstructorCard({
             </p>
           </blockquote>
         ) : null}
-        <p
-          className={`mt-4 inline-flex text-xs font-bold uppercase tracking-wide ${
-            dark ? "bg-accent px-2 py-1 text-black" : "bg-black px-2 py-1 text-accent"
-          }`}
-        >
-          {badge}
-        </p>
         {person.since ? (
           <p className={`mt-3 text-sm ${dark ? "text-white/70" : "text-muted"}`}>
             {pick(ui.teachingSince, locale)} {person.since}
@@ -68,14 +60,4 @@ export function InstructorCard({
       </div>
     </article>
   );
-}
-
-function languageBadge(person: Instructor, locale: Locale): string {
-  if (!person.languages.includes("en")) {
-    return pick(ui.lessonsInPolish, locale);
-  }
-  if (person.id === "marzena-ostafin") {
-    return pick(ui.englishInOffice, locale);
-  }
-  return pick(ui.teachesEnglish, locale);
 }
