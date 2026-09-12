@@ -27,20 +27,22 @@ export default async function FleetPage({ params }: Props) {
       lead={pick(pages.fleetLead, locale)}
     >
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        {fleet.map((item) => (
-          <figure key={item.src} className="bg-white">
-            <Image
-              src={item.src}
-              alt={pick(item.alt, locale)}
-              width={item.width}
-              height={item.height}
-              sizes="(max-width: 640px) 100vw, 50vw"
-              quality={70}
-              className="aspect-[16/10] w-full object-cover"
-            />
-            <figcaption className="px-3 py-2 text-sm text-muted">{pick(item.caption, locale)}</figcaption>
-          </figure>
-        ))}
+        {fleet.map((item) => {
+          const wide = item.width / item.height >= 2;
+          return (
+            <figure key={item.src} className={`bg-white ${wide ? "sm:col-span-2" : ""}`}>
+              <Image
+                src={item.src}
+                alt={pick(item.alt, locale)}
+                width={item.width}
+                height={item.height}
+                sizes={wide ? "100vw" : "(max-width: 640px) 100vw, 50vw"}
+                quality={70}
+                className={wide ? "h-auto w-full" : "aspect-[16/10] w-full object-cover"}
+              />
+            </figure>
+          );
+        })}
       </div>
     </PageShell>
   );

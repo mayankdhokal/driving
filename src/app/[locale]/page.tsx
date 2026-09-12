@@ -125,7 +125,6 @@ export default async function HomePage({ params }: HomeProps) {
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <h2 className="display text-3xl font-bold sm:text-4xl">{t("fleetTitle")}</h2>
-            <p className="mt-3 max-w-xl text-muted">{t("fleetHomeLead")}</p>
           </div>
           <LocaleLink href="/fleet" locale={locale} className="btn btn-dark w-full sm:w-auto">
             {t("fleet")}
@@ -143,7 +142,6 @@ export default async function HomePage({ params }: HomeProps) {
                 quality={70}
                 className="aspect-[16/10] w-full object-cover"
               />
-              <figcaption className="px-3 py-2 text-xs text-muted">{pick(item.caption, locale)}</figcaption>
             </figure>
           ))}
         </div>
