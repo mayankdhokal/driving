@@ -14,7 +14,7 @@ export const skills: readonly Skill[] = [
     title: { en: "The car", pl: "Egzamin teoretyczny" },
     body: {
       en: "Dual-control Hyundais of the same family the exam centre uses. Clutch and bite point until they are boring.",
-      pl: "Przygotuj się z naszym kursem online bez potrzeby wychodzenia z domu",
+      pl: "30 godzin wykładów lub przygotuj się z naszym kursem online we własnym tempie",
     },
   },
   {
