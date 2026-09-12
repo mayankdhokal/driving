@@ -11,14 +11,14 @@ export const extras: readonly Extra[] = [
     },
   },
   {
-    label: { en: "Extra Category B lesson (MADO students)", pl: "Jazda doszkalająca kat. B (kursanci MADO)" },
+    label: { en: "Extra Category B lesson (MADO students)", pl: "Jazda doszkalająca kat. B (kursanci DriveWay)" },
     price: 125,
     unit: "per-hour",
   },
   {
     label: {
       en: "Extra Category B lesson (from another school)",
-      pl: "Jazda doszkalająca kat. B (spoza MADO)",
+      pl: "Jazda doszkalająca kat. B (spoza DriveWay)",
     },
     price: 150,
     unit: "per-hour",
@@ -40,7 +40,7 @@ export const wordFees: readonly { label: L; note: L; indicative: number }[] = [
     label: { en: "State theory exam", pl: "Egzamin teoretyczny WORD" },
     note: {
       en: "Paid to the exam centre, not to us. Available in English.",
-      pl: "Płacisz do WORD, nie nam. Dostępny po angielsku.",
+      pl: "Płacisz do WORD, nie nam.",
     },
     indicative: 50,
   },
@@ -48,7 +48,7 @@ export const wordFees: readonly { label: L; note: L; indicative: number }[] = [
     label: { en: "State practical exam, Category B", pl: "Egzamin praktyczny WORD, kat. B" },
     note: {
       en: "Paid to the exam centre, not to us. Conducted in Polish. We drill the commands.",
-      pl: "Płacisz do WORD, nie nam. Egzamin po polsku. Ćwiczymy komendy.",
+      pl: "Płacisz do WORD, nie nam.",
     },
     indicative: 200,
   },
