@@ -83,7 +83,7 @@ export const ui = {
     en: "Prices on request. Enrol or call the office.",
     pl: "Ceny na zapytanie. Napisz lub zadzwoń do biura.",
   },
-  instructorsTitle: { en: "The people you will meet", pl: "Ludzie, których spotkasz" },
+  instructorsTitle: { en: "The people you will meet", pl: "Nasi instruktorzy" },
   allInstructors: { en: "All instructors", pl: "Wszyscy instruktorzy" },
   teachingSince: { en: "teaching since", pl: "uczy od" },
   categoriesLabel: { en: "Categories", pl: "Kategorie" },
