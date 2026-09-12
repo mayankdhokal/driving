@@ -115,7 +115,7 @@ export const ui = {
     pl: "Auta z tej samej rodziny co na WORD. Zobacz plac.",
   },
   reviewsTitle: { en: "The trust we have earned", pl: "Zaufanie, które zebraliśmy" },
-  reviewsKicker: { en: "MADO Google Reviews", pl: "Opinie Google MADO" },
+  reviewsKicker: { en: "MADO Google Reviews", pl: "Opinie Google DriveWay" },
   googleRatingLabel: { en: "Rating", pl: "Ocena" },
   reviewsSource: { en: "Google reviews", pl: "Opinie Google" },
   reviewsOf: { en: "from", pl: "z" },
