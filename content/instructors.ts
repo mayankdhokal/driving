@@ -50,16 +50,4 @@ export const instructors: readonly Instructor[] = [
     languages: ["en", "pl"],
     photo: "/images/instructors/tomasz-procner.webp",
   },
-  {
-    id: "marzena-kowalska",
-    name: "Marzena Kowalska",
-    role: { en: "Customer service", pl: "Obsługa klienta" },
-    categories: ["B"],
-    languages: ["en", "pl"],
-    photo: "/images/instructors/marzena-ostafin.webp",
-    studentNote: {
-      en: "The office actually picks up. They talk you through the messy bits.",
-      pl: "Bardzo dobry kontakt z biurem. Pomagają ogarnąć teorię.",
-    },
-  },
 ];
