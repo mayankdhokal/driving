@@ -96,7 +96,7 @@ export const ui = {
   us: { en: "Us", pl: "My" },
   schoolRole: { en: "The school", pl: "Ośrodek" },
   walkthrough: { en: "Full walkthrough", pl: "Cały przebieg" },
-  faqTitle: { en: "Questions people actually ask", pl: "Pytania, które padają naprawdę" },
+  faqTitle: { en: "Questions people actually ask", pl: "Często zadawane pytania" },
   moreQuestions: { en: "More questions", pl: "Więcej pytań" },
   contactTitle: { en: "Come in. Or just call.", pl: "Masz pytanie? Skontaktuj się z nami" },
   contactLead: {
