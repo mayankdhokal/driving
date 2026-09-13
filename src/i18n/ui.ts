@@ -112,7 +112,7 @@ export const ui = {
   fleetTitle: { en: "The cars and the yard", pl: "Galeria" },
   fleetHomeLead: {
     en: "Same family of cars the exam centre uses. See the lot.",
-    pl: "Auta z tej samej rodziny co na WORD. Zobacz plac.",
+    pl: "Nasza flota",
   },
   reviewsTitle: { en: "The trust we have earned", pl: "Zaufanie, które zebraliśmy" },
   reviewsKicker: { en: "MADO Google Reviews", pl: "Opinie Google DriveWay" },
@@ -208,7 +208,7 @@ export const pages = {
   fleetH1: { en: "Same family of cars the exam centre uses.", pl: "Auta z tej samej rodziny co na WORD." },
   fleetLead: {
     en: "You do not want to meet the clutch of an exam car for the first time at the Oświęcim exam centre. You will not.",
-    pl: "Sprzęgła egzaminacyjnego nie chcesz poznać dopiero na WORD w Oświęcimiu. Nie poznasz.",
+    pl: " ",
   },
   fleetDesc: {
     en: "Exam-spec Hyundais, motorcycles, the manoeuvring yard, and the classroom.",
