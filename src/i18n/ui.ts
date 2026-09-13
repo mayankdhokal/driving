@@ -287,7 +287,7 @@ export const formCopy = {
   start: { en: "Preferred start", pl: "Preferowany start" },
   firstSeat: { en: "First seat you can give me", pl: "Pierwsze wolne miejsce" },
   fewSeats: { en: "few seats", pl: "mało miejsc" },
-  notes: { en: "Anything we should know", pl: "Co jeszcze musimy wiedzieć" },
+  notes: { en: "Anything we should know", pl: "Uwagi (opcjonalne)" },
   consent: {
     en: "I agree that DriveWay Szkoła jazdy may contact me about this enrolment (phone, WhatsApp, or email). This is not bundled with the terms.",
     pl: "Zgadzam się, żeby DriveWay Szkoła jazdy kontaktowała się ze mną w sprawie tego zapisu (telefon, WhatsApp albo e-mail). To nie jest zgoda na regulamin.",
