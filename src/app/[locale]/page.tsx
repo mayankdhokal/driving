@@ -125,7 +125,6 @@ export default async function HomePage({ params }: HomeProps) {
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <h2 className="display text-3xl font-bold sm:text-4xl">{t("fleetTitle")}</h2>
-            <p className="mt-3 max-w-xl text-muted">{t("fleetHomeLead")}</p>
           </div>
           <LocaleLink href="/fleet" locale={locale} className="btn btn-dark w-full sm:w-auto">
             {t("fleet")}
@@ -143,7 +142,6 @@ export default async function HomePage({ params }: HomeProps) {
                 quality={70}
                 className="aspect-[16/10] w-full object-cover"
               />
-              <figcaption className="px-3 py-2 text-xs text-muted">{pick(item.caption, locale)}</figcaption>
             </figure>
           ))}
         </div>
@@ -155,7 +153,6 @@ export default async function HomePage({ params }: HomeProps) {
 
       <section className="defer-paint mx-auto max-w-6xl px-4 py-16 md:py-20">
         <h2 className="display text-3xl font-bold sm:text-4xl">{pick(pages.coursesTitle, locale)}</h2>
-        <p className="mt-3 max-w-2xl text-muted">{pick(pages.coursesLead, locale)}</p>
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {courses.map((course) => (
             <CourseCard key={course.slug} course={course} locale={locale} />
@@ -187,7 +184,6 @@ export default async function HomePage({ params }: HomeProps) {
       {showPublicPrices ? (
         <section className="defer-paint mx-auto max-w-6xl px-4 py-16 md:py-20">
           <h2 className="display text-3xl font-bold sm:text-4xl">{t("pricesTitle")}</h2>
-          <p className="mt-3 max-w-2xl text-muted">{t("pricesLead")}</p>
           <div className="mt-10">
             <PriceTable locale={locale} />
           </div>
@@ -208,6 +204,7 @@ export default async function HomePage({ params }: HomeProps) {
 
       <section className="defer-paint mx-auto max-w-6xl px-4 py-16 md:py-20">
         <h2 className="display text-3xl font-bold sm:text-4xl">{t("formTitle")}</h2>
+        <p className="mt-3 max-w-2xl text-muted">{t("formLead")}</p>
         <div className="mt-10">
           <EnrolForm locale={locale} />
         </div>

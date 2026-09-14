@@ -2,13 +2,13 @@
 
 import { useActionState, useLayoutEffect, useRef } from "react";
 import { courses } from "content/courses";
-import { intakes } from "content/intakes";
 import { school } from "content/school";
 import { submitEnrol } from "@/app/actions/enrol";
-import { formatIntakeWhen, telHref } from "@/lib/format";
+import { telHref } from "@/lib/format";
 import type { EnrolState } from "@/lib/enrol-schema";
 import { pick, type Locale } from "@/lib/locale";
-import { formCopy, ui } from "@/i18n/ui";
+import { formCopy } from "@/i18n/ui";
+import { LocaleLink } from "@/components/locale-link";
 
 const initial: EnrolState = { status: "idle" };
 
@@ -120,80 +120,35 @@ export function EnrolForm({ locale }: { locale: Locale }) {
           <FieldError id="email-error" message={fields.email} />
         </div>
       </div>
-      <div className="grid gap-5 md:grid-cols-2">
-        <div className="field">
-          <label htmlFor="category">{t("category")}</label>
-          <select
-            id="category"
-            name="category"
-            defaultValue="B"
-            required
-            aria-invalid={Boolean(fields.category)}
-            aria-describedby={fields.category ? "category-error" : undefined}
-          >
-            {courses.map((course) => (
-              <option key={course.code} value={course.code}>
-                {pick(course.name, locale)}
-              </option>
-            ))}
-          </select>
-          <FieldError id="category-error" message={fields.category} />
-        </div>
-        <div className="field">
-          <label htmlFor="language">{t("courseLanguage")}</label>
-          <select
-            id="language"
-            name="language"
-            defaultValue={locale}
-            required
-            aria-invalid={Boolean(fields.language)}
-            aria-describedby={fields.language ? "language-error" : undefined}
-          >
-            <option value="en">{pick(ui.english, locale)}</option>
-            <option value="pl">{pick(ui.polish, locale)}</option>
-          </select>
-          <FieldError id="language-error" message={fields.language} />
-        </div>
-      </div>
       <div className="field">
-        <label htmlFor="intakeId">{t("start")}</label>
+        <label htmlFor="category">{t("category")}</label>
         <select
-          id="intakeId"
-          name="intakeId"
-          defaultValue="any"
-          aria-invalid={Boolean(fields.intakeId)}
-          aria-describedby={fields.intakeId ? "intake-error" : undefined}
+          id="category"
+          name="category"
+          defaultValue="B"
+          required
+          aria-invalid={Boolean(fields.category)}
+          aria-describedby={fields.category ? "category-error" : undefined}
         >
-          <option value="any">{t("firstSeat")}</option>
-          {intakes
-            .filter((intake) => intake.status !== "full")
-            .map((intake) => (
-              <option key={intake.id} value={intake.id}>
-                {formatIntakeWhen(intake.startsAt, locale)} · {intake.language.toUpperCase()} ·{" "}
-                {pick(ui[intake.format], locale)}
-                {intake.status === "few-seats" ? ` · ${t("fewSeats")}` : ""}
-              </option>
-            ))}
+          {courses.map((course) => (
+            <option key={course.code} value={course.code}>
+              {pick(course.name, locale)}
+            </option>
+          ))}
         </select>
-        <FieldError id="intake-error" message={fields.intakeId} />
+        <FieldError id="category-error" message={fields.category} />
       </div>
       <div className="field">
         <label htmlFor="message">{t("notes")}</label>
         <textarea id="message" name="message" maxLength={2000} />
       </div>
-      <label className="flex items-start gap-3 text-sm">
-        <input
-          type="checkbox"
-          name="consent"
-          value="on"
-          className="mt-1"
-          required
-          aria-invalid={Boolean(fields.consent)}
-          aria-describedby={fields.consent ? "consent-error" : undefined}
-        />
-        <span>{t("consent")}</span>
-      </label>
-      <FieldError id="consent-error" message={fields.consent} />
+      <p className="text-sm text-muted">
+        {t("privacyNotice")}
+        <LocaleLink href="/privacy" locale={locale} className="underline hover:text-ink">
+          {t("privacyNoticeLink")}
+        </LocaleLink>
+        .
+      </p>
       <button type="submit" className="btn btn-primary w-fit" disabled={pending}>
         {pending ? t("sending") : t("send")}
       </button>

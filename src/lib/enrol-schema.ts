@@ -1,6 +1,5 @@
 import { z } from "zod";
 import { courses } from "content/courses";
-import { intakes } from "content/intakes";
 import { parseLocale, pick, type Locale } from "@/lib/locale";
 import { formCopy } from "@/i18n/ui";
 
@@ -21,10 +20,7 @@ export function enrolSchema(locale: Locale) {
       .regex(/^[+\d][\d\s()-]{6,}$/u, t("errPhoneInvalid")),
     email: z.string().trim().email(t("errEmail")),
     category: z.enum(categoryCodes, { message: t("errCategory") }),
-    intakeId: z.string().trim(),
-    language: z.enum(["en", "pl"], { message: t("errLanguage") }),
     message: z.string().trim().max(2000).optional().default(""),
-    consent: z.string().refine((value) => value === "on", { message: t("errConsent") }),
     website: z.string().optional().default(""),
     startedAt: z.string().trim(),
     uiLocale: z.string().optional(),
@@ -46,10 +42,7 @@ function rawFrom(formData: FormData) {
     phone: String(formData.get("phone") ?? ""),
     email: String(formData.get("email") ?? ""),
     category: String(formData.get("category") ?? ""),
-    intakeId: String(formData.get("intakeId") ?? ""),
-    language: String(formData.get("language") ?? ""),
     message: String(formData.get("message") ?? ""),
-    consent: formData.get("consent") === "on" ? "on" : "",
     website: String(formData.get("website") ?? ""),
     startedAt: String(formData.get("startedAt") ?? ""),
     uiLocale: String(formData.get("uiLocale") ?? ""),
@@ -80,14 +73,6 @@ export function parseEnrolForm(formData: FormData): EnrolState {
   const started = Number(parsed.data.startedAt);
   if (!Number.isFinite(started) || Date.now() - started < 3000) {
     return { status: "error", fields: { form: t("errSlow") }, message: t("errSlow") };
-  }
-
-  if (
-    parsed.data.intakeId &&
-    parsed.data.intakeId !== "any" &&
-    !intakes.some((intake) => intake.id === parsed.data.intakeId)
-  ) {
-    return { status: "error", fields: { intakeId: t("errIntake") }, message: t("errIntake") };
   }
 
   return { status: "success", name: parsed.data.name };

@@ -2,59 +2,53 @@ import type { FleetItem } from "./types";
 
 export const fleet: readonly FleetItem[] = [
   {
-    src: "/images/fleet-hyundai.webp",
-    width: 800,
-    height: 533,
+    src: "/images/gallery-01-yaris.webp",
+    width: 576,
+    height: 432,
     alt: {
-      en: "Dual-control Hyundai used for Category B lessons",
-      pl: "Hyundai z podwójnymi pedałami do jazd kat. B",
+      en: "White Toyota training car with an L-plate on the yard",
+      pl: "Biała Toyota szkolna z tablicą L na placu",
     },
     kind: "car",
-    caption: {
-      en: "Exam-spec Hyundai, dual control",
-      pl: "Hyundai jak na egzaminie w WORD",
-    },
   },
   {
-    src: "/images/fleet-yard.webp",
-    width: 800,
-    height: 533,
+    src: "/images/gallery-02-yard.webp",
+    width: 768,
+    height: 498,
     alt: {
-      en: "Manoeuvring yard marked for driving tests",
-      pl: "Plac manewrowy jak na egzaminie",
+      en: "Training car practising manoeuvres between cones",
+      pl: "Samochód szkolny na placu manewrowym między pachołkami",
     },
     kind: "yard",
-    caption: {
-      en: "Yard laid out like the exam centre",
-      pl: "Plac ustawiony jak w WORD",
-    },
   },
   {
-    src: "/images/fleet-moto.webp",
-    width: 800,
-    height: 533,
+    src: "/images/gallery-03-pair.webp",
+    width: 1024,
+    height: 640,
     alt: {
-      en: "Training motorcycle on the school yard",
-      pl: "Motocykl szkolny na placu",
+      en: "Two white Toyota training cars with L-plates",
+      pl: "Dwie białe Toyoty szkolne z tablicami L",
     },
-    kind: "motorcycle",
-    caption: {
-      en: "Motorcycle categories AM to A",
-      pl: "Motocykle kategorii AM do A",
-    },
+    kind: "car",
   },
   {
-    src: "/images/fleet-classroom.webp",
-    width: 800,
-    height: 533,
+    src: "/images/gallery-04-lot.webp",
+    width: 1024,
+    height: 576,
     alt: {
-      en: "Classroom set up for theory lectures",
-      pl: "Sala wykładowa do teorii",
+      en: "Driving-school cars parked together",
+      pl: "Samochody szkoły jazdy zaparkowane razem",
     },
-    kind: "classroom",
-    caption: {
-      en: "Classroom for theory",
-      pl: "Sala do teorii",
+    kind: "car",
+  },
+  {
+    src: "/images/gallery-05-views.webp",
+    width: 940,
+    height: 370,
+    alt: {
+      en: "Front and rear view of a white Toyota training car",
+      pl: "Przód i tył białej Toyoty szkolnej",
     },
+    kind: "car",
   },
 ];
