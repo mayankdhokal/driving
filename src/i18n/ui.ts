@@ -202,7 +202,7 @@ export const pages = {
   fleetH1: { en: "Same family of cars the exam centre uses.", pl: "Auta z tej samej rodziny co na WORD." },
   fleetLead: {
     en: "You do not want to meet the clutch of an exam car for the first time at the Oświęcim exam centre. You will not.",
-    pl: "Sprzęgła egzaminacyjnego nie chcesz poznać dopiero na WORD w Oświęcimiu. Nie poznasz.",
+    pl: " ",
   },
   fleetDesc: {
     en: "Exam-spec Hyundais, motorcycles, the manoeuvring yard, and the classroom.",
@@ -246,8 +246,8 @@ export const pages = {
   included: { en: "Included", pl: "W cenie" },
   notIncluded: { en: "Not included", pl: "Poza ceną" },
   vehicles: { en: "Vehicles", pl: "Pojazdy" },
-  honestTotal: { en: "Honest total", pl: "Uczciwy rachunek" },
-  honestTotalNote: { en: "medical. State exam fees are extra.", pl: "+ WORD." },
+  honestTotal: { en: "Honest total", pl: "Pełna cena" },
+  honestTotalNote: { en: "medical. State exam fees are extra.", pl: "+ 230zł egzamin WORD." },
   minAge: { en: "minimum age", pl: "wiek min." },
   hoursWord: { en: "hours", pl: "godz." },
   englishAvailable: { en: "English available", pl: "Jest angielski" },
@@ -277,7 +277,7 @@ export const formCopy = {
   phone: { en: "Phone", pl: "Telefon" },
   email: { en: "Email", pl: "E-mail" },
   category: { en: "Category", pl: "Kategoria" },
-  notes: { en: "Anything we should know", pl: "Co jeszcze musimy wiedzieć" },
+  notes: { en: "Anything we should know", pl: "Uwagi (opcjonalne)" },
   privacyNotice: {
     en: "The controller of personal data is DriveWay. Data will be processed to handle your driving-course enquiry and to contact you about it. Full details are in the ",
     pl: "Administratorem danych osobowych jest DriveWay. Dane będą przetwarzane w celu obsługi zgłoszenia dotyczącego kursu prawa jazdy i kontaktu w tej sprawie. Szczegółowe informacje znajdują się w ",
