@@ -49,7 +49,7 @@ export const ui = {
   nextEnglish: { en: "Next course:", pl: "Najbliższy kurs:" },
   seatsLeft: { en: "Seats left:", pl: "Wolne miejsca:" },
   nextIntake: { en: "Next intake", pl: "Najbliższy nabór" },
-  callForDate: { en: "Call for the next start date", pl: "Zadzwoń po najbliższy termin" },
+  callForDate: { en: "Call for the next start date", pl: "Najbliższy kurs: czwartek, 1 października 2026 · Wolne miejsca: 2" },
   priceLine: { en: "for the course · medical", pl: "za kurs · badania" },
   extraWord: { en: "extra · state exam fees extra", pl: "osobno · egzamin WORD osobno" },
   skillsEyebrow: { en: "Skills", pl: "Przebieg" },
