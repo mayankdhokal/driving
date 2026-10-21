@@ -158,7 +158,7 @@ export const pages = {
     pl: "Prawo jazdy zaczyna się od dobrej szkoły",
   },
   coursesTitle: { en: "Courses", pl: "Kursy" },
-  coursesH1: { en: "Pick a category. Start with B if you need a car.", pl: "Wybierz kategorię. B, jeśli potrzebujesz samochodu." },
+  coursesH1: { en: "Pick a category. Start with B if you need a car.", pl: "Kategorie kursów" },
   coursesLead: {
     en: "Category B can run in English. Motorcycle and moped theory is in Polish. The office can still take questions in English.",
     pl: "Kat. B może iść po angielsku. Teoria motocykla i motoroweru jest po polsku. Biuro i tak odbierze po angielsku.",
