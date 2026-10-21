@@ -199,7 +199,7 @@ export const pages = {
     pl: "Instruktorzy MADO w Kętach. Sprawdź, kto uczy po angielsku, zanim się zapiszesz.",
   },
   fleetPageTitle: { en: "Fleet", pl: "Więcej" },
-  fleetH1: { en: "Same family of cars the exam centre uses.", pl: "Auta z tej samej rodziny co na WORD." },
+  fleetH1: { en: "Same family of cars the exam centre uses.", pl: "Nasza flota" },
   fleetLead: {
     en: "You do not want to meet the clutch of an exam car for the first time at the Oświęcim exam centre. You will not.",
     pl: " ",
