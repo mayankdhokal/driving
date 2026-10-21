@@ -181,7 +181,7 @@ export const pages = {
   startH1: { en: "Candidate profile, then theory, then the car, then the exam.", pl: "PKK, potem teoria, potem auto, potem WORD." },
   startLead: {
     en: "Poland will not let a school log hours without a candidate-driver profile. We do not skip that. We do make it less opaque.",
-    pl: "Bez PKK szkoła nie może wpisywać godzin. Tego nie omijamy. Tłumaczymy, jak to załatwić.",
+    pl: "Prawo jazdy krok po kroku.",
   },
   startDesc: {
     en: "Medical, candidate profile, theory, practical hours, internal exam, then the state test.",
