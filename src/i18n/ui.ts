@@ -241,7 +241,7 @@ export const pages = {
   preferTalk: { en: "Prefer to talk", pl: "Wolisz rozmowę" },
   enrolAside: {
     en: "Bring a passport or residence card when you sign. You still need a medical and a candidate-driver profile before hours can start.",
-    pl: "Na umowę weź paszport albo kartę pobytu. Przed godzinami i tak badania i PKK.",
+    pl: "",
   },
   included: { en: "Included", pl: "W cenie" },
   notIncluded: { en: "Not included", pl: "Poza ceną" },
