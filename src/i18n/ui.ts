@@ -181,7 +181,7 @@ export const pages = {
   startH1: { en: "Candidate profile, then theory, then the car, then the exam.", pl: "PKK, potem teoria, potem auto, potem WORD." },
   startLead: {
     en: "Poland will not let a school log hours without a candidate-driver profile. We do not skip that. We do make it less opaque.",
-    pl: "Bez PKK szkoła nie może wpisywać godzin. Tego nie omijamy. Tłumaczymy, jak to załatwić.",
+    pl: "Prawo jazdy krok po kroku.",
   },
   startDesc: {
     en: "Medical, candidate profile, theory, practical hours, internal exam, then the state test.",
@@ -199,7 +199,7 @@ export const pages = {
     pl: "Instruktorzy MADO w Kętach. Sprawdź, kto uczy po angielsku, zanim się zapiszesz.",
   },
   fleetPageTitle: { en: "Fleet", pl: "Więcej" },
-  fleetH1: { en: "Same family of cars the exam centre uses.", pl: "Auta z tej samej rodziny co na WORD." },
+  fleetH1: { en: "Same family of cars the exam centre uses.", pl: "Nasza flota" },
   fleetLead: {
     en: "You do not want to meet the clutch of an exam car for the first time at the Oświęcim exam centre. You will not.",
     pl: " ",
@@ -211,16 +211,16 @@ export const pages = {
   faqH1: { en: "Questions people actually ask.", pl: "Pytania, które padają naprawdę." },
   faqLead: {
     en: "Read these first, then enrol or call.",
-    pl: "Przeczytaj, potem zapisz się albo zadzwoń.",
+    pl: "",
   },
   faqDesc: {
     en: "Theory language, candidate profile, state exams, age rules, and what 3,600 zł includes.",
     pl: "Język teorii, PKK, WORD, wiek i co wchodzi w 3600 zł.",
   },
-  contactH1: { en: "The office is in Kęty. The phone is answered.", pl: "Biuro jest w Kętach. Telefon jest odbierany." },
+  contactH1: { en: "The office is in Kęty. The phone is answered.", pl: "Skontaktuj się z nami" },
   contactLead: {
     en: "Walk in during hours, or call. English is available on the office line and WhatsApp.",
-    pl: "Wejdź w godzinach pracy albo zadzwoń. Biuro i WhatsApp też po angielsku.",
+    pl: "Wejdź w godzinach pracy albo zadzwoń.",
   },
   contactDesc: { en: "DriveWay driving school in Kęty. Call the office.", pl: "DriveWay Szkoła jazdy w Kętach. Zadzwoń do biura." },
   whatsapp: { en: "WhatsApp", pl: "WhatsApp" },
@@ -228,11 +228,11 @@ export const pages = {
   enrolTitle: { en: "Enrol", pl: "Zapis" },
   enrolH1: {
     en: "Tell us who you are. We will hold a seat or tell you the next one.",
-    pl: "Napisz, kim jesteś. Zatrzymamy miejsce albo podamy następny termin.",
+    pl: "Napisz, do nas. Zatrzymamy miejsce albo podamy następny termin.",
   },
   enrolLead: {
     en: "This sends a message to the school. It is not a paid booking until the office confirms. If the form fails, call. Do not assume we saw it.",
-    pl: "To mail do ośrodka. To nie jest płatna rezerwacja, dopóki biuro nie potwierdzi. Jak formularz padnie, dzwoń. Nie zakładaj, że doszło.",
+    pl: "",
   },
   enrolDesc: {
     en: "Request a seat on a Category B course in Kęty. The office confirms by phone or email.",
@@ -241,7 +241,7 @@ export const pages = {
   preferTalk: { en: "Prefer to talk", pl: "Wolisz rozmowę" },
   enrolAside: {
     en: "Bring a passport or residence card when you sign. You still need a medical and a candidate-driver profile before hours can start.",
-    pl: "Na umowę weź paszport albo kartę pobytu. Przed godzinami i tak badania i PKK.",
+    pl: "",
   },
   included: { en: "Included", pl: "W cenie" },
   notIncluded: { en: "Not included", pl: "Poza ceną" },

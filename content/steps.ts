@@ -15,7 +15,7 @@ export const steps: readonly Step[] = [
     title: { en: "Get your candidate profile", pl: "PKK" },
     body: {
       en: "Take the medical certificate and your ID to the municipal office and apply for a candidate-driver profile (PKK). We tell you which desk and which form. You cannot start theory without this number.",
-      pl: "Z badaniami i dokumentem idziesz do urzędu po Profil Kandydata na Kierowcę. Powiemy, które okienko. Bez numeru PKK nie zaczynamy teorii.",
+      pl: "Z badaniami i dokumentem idziesz do urzędu po Profil Kandydata na Kierowcę. Bez numeru PKK nie zaczynamy teorii.",
     },
     who: "you",
   },
@@ -24,7 +24,7 @@ export const steps: readonly Step[] = [
     title: { en: "Theory", pl: "Teoria" },
     body: {
       en: "Thirty lesson hours in our classroom in Kęty. Lectures, question-bank practice, and the same test format the exam centre uses. English group available for Category B.",
-      pl: "30 godzin lekcyjnych na sali w Kętach. Wykłady, baza pytań, format jak na WORD. Na kat. B jest też grupa angielska.",
+      pl: "30 godzin lekcyjnych na sali w Kętach. Wykłady, baza pytań, format jak na WORD.",
     },
     who: "us",
   },
@@ -33,7 +33,7 @@ export const steps: readonly Step[] = [
     title: { en: "Practical hours", pl: "Jazdy" },
     body: {
       en: "Thirty hours in a dual-control Hyundai of the kind the exam centre puts on the test. Yard, town, and the Oświęcim-area routes examiners actually use.",
-      pl: "30 godzin na Hyundaiu z podwójnymi pedałami, jak na egzaminie. Plac, miasto i trasy z okolic Oświęcimia.",
+      pl: "30 godzin na Hyundaiu Plac, miasto i trasy z okolic Oświęcimia.",
     },
     who: "us",
   },
