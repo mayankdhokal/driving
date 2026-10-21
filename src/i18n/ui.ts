@@ -217,10 +217,10 @@ export const pages = {
     en: "Theory language, candidate profile, state exams, age rules, and what 3,600 zł includes.",
     pl: "Język teorii, PKK, WORD, wiek i co wchodzi w 3600 zł.",
   },
-  contactH1: { en: "The office is in Kęty. The phone is answered.", pl: "Biuro jest w Kętach. Telefon jest odbierany." },
+  contactH1: { en: "The office is in Kęty. The phone is answered.", pl: "Skontaktuj się z nami" },
   contactLead: {
     en: "Walk in during hours, or call. English is available on the office line and WhatsApp.",
-    pl: "Wejdź w godzinach pracy albo zadzwoń. Biuro i WhatsApp też po angielsku.",
+    pl: "Wejdź w godzinach pracy albo zadzwoń.",
   },
   contactDesc: { en: "DriveWay driving school in Kęty. Call the office.", pl: "DriveWay Szkoła jazdy w Kętach. Zadzwoń do biura." },
   whatsapp: { en: "WhatsApp", pl: "WhatsApp" },
