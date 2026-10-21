@@ -228,11 +228,11 @@ export const pages = {
   enrolTitle: { en: "Enrol", pl: "Zapis" },
   enrolH1: {
     en: "Tell us who you are. We will hold a seat or tell you the next one.",
-    pl: "Napisz, kim jesteś. Zatrzymamy miejsce albo podamy następny termin.",
+    pl: "Napisz, do nas. Zatrzymamy miejsce albo podamy następny termin.",
   },
   enrolLead: {
     en: "This sends a message to the school. It is not a paid booking until the office confirms. If the form fails, call. Do not assume we saw it.",
-    pl: "To mail do ośrodka. To nie jest płatna rezerwacja, dopóki biuro nie potwierdzi. Jak formularz padnie, dzwoń. Nie zakładaj, że doszło.",
+    pl: "",
   },
   enrolDesc: {
     en: "Request a seat on a Category B course in Kęty. The office confirms by phone or email.",
