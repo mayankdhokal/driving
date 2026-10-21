@@ -211,7 +211,7 @@ export const pages = {
   faqH1: { en: "Questions people actually ask.", pl: "Pytania, które padają naprawdę." },
   faqLead: {
     en: "Read these first, then enrol or call.",
-    pl: "Przeczytaj, potem zapisz się albo zadzwoń.",
+    pl: "",
   },
   faqDesc: {
     en: "Theory language, candidate profile, state exams, age rules, and what 3,600 zł includes.",
